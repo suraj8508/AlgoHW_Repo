@@ -1,0 +1,90 @@
+/*CSS styling for the for HW2 Webpage*/
+
+body {
+    margin: 0px;
+    background-color: blanchedalmond;
+    /*background-image: url("images/fd_patrn_bg2.jpeg");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+
+}
+
+div.content-malabar-food {
+    background-image: url("images/chicken2.jpg");
+
+}
+
+div.content-malabar-food h2 {
+    /*background-image: url("images/chickn_img.jpeg");*/
+    /*background-size: auto;*/
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    color: brown;
+
+}
+
+hr {
+    width: 900px;
+    border-top: 2px solid black;
+}
+
+div.content-malabar-food h4 {
+    /*background-image: url("images/chickn_img.jpeg");*/
+    /*background-size: auto;*/
+    text-transform: capitalize;
+    text-align: center;
+    font-style: italic;
+    color: saddlebrown;
+
+}
+
+.malbr-food-ingridients {
+    border: 20px  solid grey;
+    height: 500px;
+    width: 1350px;
+    padding: 20px;
+    margin: 0px;
+    background-image: url("images/spices_bg.jpeg");
+    /*filter: blur(8px);*/
+    /*-webkit-filter: blur(8px);*/
+
+}
+
+.malbr-food-ingridients h4 {
+    color: black;
+    font-style: oblique;
+    font-size: large;
+    margin: 50px;
+    /*background-color: blanchedalmond;*/
+    margin-bottom: 5px;
+}
+
+#ingridients-4-biryani-1 {
+    width: 300px;
+    height: 300px;
+}
+
+#ingridients-4-biryani-2 {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.malbr-food-instructions h3 {
+    color: black;
+    font-style: oblique;
+    font-size: large;
+    margin: 50px;
+
+}
+
+.malbr-food-instructions {
+    border: 20px  solid grey;
+    height: 550px;
+    width: 1350px;
+    padding: 20px;
+    margin: 0px;
+    background-image: url("images/cooking.jpeg");
+}
