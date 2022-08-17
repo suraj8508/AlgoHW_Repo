@@ -1,37 +1,45 @@
 # 1. Compute the sum of digits in all numbers from 1 to n. When a user enters a number n, find the
 # sum of digits in all numbers from 1 to n.
 
-num = int(input("Enter a number: "))
-def digits_sum(n):
-    result = 0
-    for i in range(1, n+1):
-        # print(i)
-        result = result + i
-    return result
-
-
-s_digits = digits_sum(num)
-print(s_digits)
+# num = int(input("Enter a number: "))
+# def digits_sum(n):
+#     result = 0
+#     for i in range(n+1):
+#         # print(i)
+#         # result = result + i
+#         result += i
+#     return result
+#
+#
+# s_digits = digits_sum(num)
+# print(s_digits)
 
 
 #2.Find max number from 3 values, entered manually from a keyboard.
 
-print("Enter 3 numbers to find max among them ")
-a = int(input("Enter 1st number: "))
-b = int(input("Enter 2nd number: "))
-c = int(input("Enter 3rd number: "))
+# print("Enter 3 numbers to find max among them ")
+# a = int(input("Enter 1st number: "))
+# b = int(input("Enter 2nd number: "))
+# c = int(input("Enter 3rd number: "))
 
-def find_max(n1, n2, n3):
-    if n1 > n2:
-        return n1
-    elif n2 > n3:
-        return n2
-    else:
-        return n3
+# def find_max(n1, n2, n3):
+    # if n1 > n2:
+    #     return n1
+    # elif n2 > n3:
+    #     return n2
+    # else:
+    #     return n3
 
-
-highest = find_max(a, b, c)
-print(highest)
+#     if n1 > n2 and n1 > n3:
+#         return n1
+#     elif n1 < n2 and n2 > n3:
+#         return n2
+#     else:
+#         return n3
+#
+#
+# highest = find_max(a, b, c)
+# print(highest)
 
 # 3. Count odd and even numbers. Count odd and even digits of the whole number.
 # Example: entered number is 34560, then 3 digits will be even (4, 6, and 0) and 2 odd digits (3 and 5).
@@ -40,27 +48,42 @@ print(highest)
 # number = input("Enter a number of your choice: ")
 #
 #
-def count_odd_even(n):
+# def count_odd_even(n):
+#     co = 0
+#     ce = 0
+#     con = []
+#     cen = []
+#     for i in n:
+#         i = int(i)
+#         # print(i)
+#         # print(type(i))
+#         if i % 2 == 0:
+#             ce = ce + 1
+#             cen.append(i)
+#         else:
+#             co = co + 1
+#             con.append(i)
+#
+#     print(f"Even numbers are {cen} and Odd Numbers are {con}")
+#     return f"Count of Odd number is {co} and the count of Even number is {ce}"
+
+def count_even_odd(n):
     co = 0
     ce = 0
-    con = []
-    cen = []
-    for i in number:
-        i = int(i)
-        # print(i)
-        # print(type(i))
-        if i % 2 == 0:
-            ce = ce + 1
-            cen.append(i)
+
+    while n != 0:
+        current_number = n % 10
+        if current_number % 2:
+            co += 1
         else:
-            co = co + 1
-            con.append(i)
+            ce += 1
+        n = n // 10
 
-    print(f"Even numbers are {cen} and Odd Numbers are {con}")
-    return f"Count of Odd number is {co} and the count of Even number is {ce}"
+    return [co, ce]
 
 
-result = count_odd_even(number)
+# number = input(" Enter a number of  your choice: ")
+result = count_even_odd(98797865643)
 print(result)
 
 
@@ -83,13 +106,14 @@ Examples
 #     count = []
 #     for n in array:
 #         if n not in count:
-#             count = count.append(n)
+#                 elif n % 2 != 0:
+#                 count = count.append(n)
 #     return count
 #
 #
 # odd_times = odd_num_times(num_list)
 # print(odd_times)
-
+#
 
 
 
